@@ -1,0 +1,42 @@
+.about__img-wrapper {
+	position: relative;
+}
+
+.about__us {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-color-btn);
+	margin-bottom: 50px;
+}
+
+.about__img {
+	display: flex;
+	padding: 0;
+	margin: -15px;
+}
+
+.about__card-img {
+	margin: 15px;
+}
+
+.about__desc {
+	position: absolute;
+	padding: 27px;
+	width: 100%;
+
+	text-align: center;
+	background: rgba(47, 48, 58, 0.8);
+	margin: 0;
+	bottom: 0;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.43;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}

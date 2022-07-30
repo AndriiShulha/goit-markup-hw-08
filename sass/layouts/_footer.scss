@@ -1,0 +1,53 @@
+.footer {
+	padding: 60px 0;
+	background-color: var(--bg-color);
+
+	&__container {
+		display: flex;
+		align-items: baseline;
+	}
+}
+
+.footer__contact {
+	margin-right: 70px;
+}
+
+.logo {
+	display: block;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--accent-txt-color);
+
+	&__text {
+		color: var(--color-light);
+	}
+}
+
+.address {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-light);
+
+	&__contact-list {
+		text-decoration: none;
+	}
+}
+
+.footer__address {
+	margin-top: 20px;
+}
+
+.address__link {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--card-text);
+	transition: color var(--anim-slow);
+}

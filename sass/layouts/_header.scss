@@ -1,0 +1,60 @@
+.header {
+	position: relative;
+
+	&--wrapper {
+		border: 1px solid #ececec;
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header-contact {
+	display: flex;
+	margin-left: auto;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1, 14;
+	letter-spacing: 0.02em;
+	color: var(--card-text);
+}
+
+.header-contact__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--accent-txt-color);
+		cursor: pointer;
+	}
+}
+
+.header-contact__link {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	align-items: center;
+	transition: color var(--anim-slow);
+	color: var(--card-text);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-txt-color);
+	}
+}
+
+.header-contact__icon {
+	margin-right: 10px;
+	fill: currentColor;
+}
