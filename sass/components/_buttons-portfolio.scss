@@ -13,6 +13,13 @@
 	}
 }
 
+.button-portfolio__list.button-portfolio__current,
+.button-portfolio__list:hover,
+.button-portfolio__list:focus {
+	background-color: var(--accent-txt-color);
+	color: var(--color-light);
+}
+
 .button-portfolio__current::after {
 	position: absolute;
 	content: "";

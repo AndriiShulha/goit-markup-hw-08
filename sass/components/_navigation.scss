@@ -15,6 +15,10 @@
 	@media screen and (max-width: 767px) {
 		display: none;
 	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .nav__link {
@@ -23,6 +27,10 @@
 	padding-top: 32px;
 	padding-bottom: 32px;
 	transition: color var(--anim-slow);
+}
+
+.nav__current {
+	color: var(--accent-txt-color);
 }
 
 .nav__current::after {
