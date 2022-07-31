@@ -1,9 +1,16 @@
 .button-portfolio {
 	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 40px;
+	// margin-bottom: 50px;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		margin-left: -8px;
+	}
 }
 
 .button-portfolio__current::after {
@@ -20,6 +27,16 @@
 	color: var(--accent-txt-color);
 }
 
+.button-portfolio__item {
+	@media screen and (min-width: 768px) {
+		margin-right: 8px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 8px;
+	}
+}
+
 .button-portfolio__item:not(:last-child) {
 	margin-right: 8px;
 }
@@ -29,23 +46,26 @@
 }
 
 .button-portfolio__list {
-	padding: 5px 20px;
-	font-family: inherit;
+	font-family: var(--main-font);
+	background-color: #f5f4fa;
+	color: #212121;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.62;
-	text-align: left;
+	line-height: 1.63;
+	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--main-color-btn);
-
 	cursor: pointer;
+	border-radius: 4px;
+	border: 0px;
+	padding: 6px 22px;
 	transition: background-color var(--anim-slow), color var(--anim-slow), box-shadow var(--anim-slow);
 
-	&.button-portfolio__current,
 	&:hover,
 	&:focus {
 		background-color: var(--accent-txt-color);
-		color: var(--color-light);
+		color: #ffffff;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+		outline: none;
 	}
 }
 

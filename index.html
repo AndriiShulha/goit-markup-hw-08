@@ -61,26 +61,67 @@
 					</li>
 				</ul>
 
-				<button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-					<svg class="mobile-menu-icon" width="24" height="16">
-						<use class="mobile-menu-burger" href="./images/icons.svg#burger-menu"></use>
-						<use class="mobile-menu-close" href="./images/icons.svg#icon-close-menu"></use>
+				<button type="button" class="menu-open">
+					<svg class="menu-open__icon" width="40" height="40">
+						<use href="./images/icons.svg#burger-menu"></use>
 					</svg>
 				</button>
+			</div>
+
+			<div class="mob-menu">
+				<div class="container">
+					<div class="mob-menu__top">
+						<button type="button" class="menu-close">
+							<svg class="menu-close__icon" width="40" height="40">
+								<use href="./images/icons.svg#icon-close-menu"></use>
+							</svg>
+						</button>
+						<nav>
+							<ul class="mob-navigation">
+								<li class="mob-navigation__item mob-navigation__studio">
+									<a href="./index.html" class="mob-navigation__current mob-navigation__link">Студия</a>
+								</li>
+								<li class="mob-navigation__item">
+									<a href="./portfolio.html" class="mob-navigation__link">Портфолио</a>
+								</li>
+								<li class="mob-navigation__item">
+									<a href="" class="mob-navigation__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="mob-menu-bottom">
+						<ul class="mob-contacts mob-header__contacts">
+							<li class="mob-contacts__item">
+								<a href="tel:+380961111111" class="mob-contacts__link mob-tel">+38 096 111 11 11</a>
+							</li>
+							<li class="mob-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mob-contacts__link mob-mail">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mob-soc">
+							<li class="mob-soc__item"><a href="" class="mob-soc__link">Instagram</a></li>
+							<li class="mob-soc__item"><a href="" class="mob-soc__link">Twitter</a></li>
+							<li class="mob-soc__item"><a href="" class="mob-soc__link">Facebook</a></li>
+							<li class="mob-soc__item"><a href="" class="mob-soc__link">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<main>
 			<!--Герой-->
-			<!-- <section class="hero">
+			<section class="hero">
 				<div class="container">
 					<h1 class="uppertitle">Эффективные решения для вашего бизнеса</h1>
 					<button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
 				</div>
-			</section> -->
+			</section>
 
 			<!--Преимущества-->
-			<!-- <section class="benefits">
+			<section class="benefits">
 				<div class="container">
 					<h2 class="hidden">Преимущества</h2>
 					<ul class="list benefits-us">
@@ -134,10 +175,10 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!--Чем занимаются-->
-			<!-- <section class="about-section section">
+			<section class="about-section section">
 				<div class="container about">
 					<h2 class="about__us">Чем мы занимаемся</h2>
 
@@ -162,10 +203,10 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!--Команда-->
-			<!-- <section class="team">
+			<section class="team">
 				<div class="container">
 					<h2 class="team-us">Наша команда</h2>
 
@@ -335,10 +376,10 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- Постоянные клиенты -->
-			<!-- <section class="customers">
+			<section class="customers">
 				<div class="container">
 					<h2 class="customers__title">Постоянные клиенты</h2>
 					<ul class="customers__list">
@@ -386,12 +427,12 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 		</main>
 
 		<!--Футер-->
 
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__contact">
 					<a class="logo link" href="./index.html">
@@ -408,7 +449,7 @@
 					</address>
 				</div>
 
-				<div>
+				<div class="footer__soc-section">
 					<h3 class="soc-footer-title">присоединяйтесь</h3>
 					<ul class="soc-footer">
 						<li>
@@ -458,7 +499,7 @@
 					</form>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
 		<!-- Модальное окно -->
 		<div class="backdrop is-hidden" data-modal>
@@ -528,41 +569,6 @@
 		</div>
 
 		<!-- Мобильное меню -->
-		<div class="mobile-menu js-menu-container" id="mobile-menu">
-			<ul class="mobile-menu-nav list-mobile">
-				<li class="mobile-menu-nav-item">
-					<a href="">Студия</a>
-				</li>
-				<li class="mobile-menu-nav-item">
-					<a href="">Портфолио</a>
-				</li>
-				<li class="mobile-menu-nav-item">
-					<a href="">Контакты</a>
-				</li>
-			</ul>
-			<ul class="mobile-menu-contacts list-mobile">
-				<li class="mobile-menu-contacts-item">
-					<a href="">+38 096 111 11 11</a>
-				</li>
-				<li class="mobile-menu-contacts-item">
-					<a href="">info@devstudio.com</a>
-				</li>
-			</ul>
-			<ul class="mobile-menu-socials list-mobile">
-				<li class="mobile-menu-socials-item">
-					<a href="">Instagram</a>
-				</li>
-				<li class="mobile-menu-socials-item">
-					<a href="">Twitter</a>
-				</li>
-				<li class="mobile-menu-socials-item">
-					<a href="">Facebook</a>
-				</li>
-				<li class="mobile-menu-socials-item">
-					<a href="">LinkedIn</a>
-				</li>
-			</ul>
-		</div>
 
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
