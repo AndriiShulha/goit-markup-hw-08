@@ -1537,7 +1537,6 @@ section {
   .customers__item {
     -ms-flex-preferred-size: calc(16.6666666667% - 30px);
         flex-basis: calc(16.6666666667% - 30px);
-    margin-left: 30px;
   }
 }
 
