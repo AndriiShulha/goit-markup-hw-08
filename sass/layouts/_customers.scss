@@ -11,9 +11,9 @@
 
 .customers__list {
 	display: flex;
-	// flex-wrap: wrap;
-	padding: 0;
+
 	gap: 30px;
+	padding: 0;
 }
 
 .customers__item {
@@ -29,7 +29,7 @@
 	}
 	@media screen and (min-width: 1200px) {
 		flex-basis: calc(100% / 6 - 30px);
-		// margin-left: 30px;
+		// 	margin-left: 30px;
 	}
 }
 
