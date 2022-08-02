@@ -11,7 +11,7 @@
 
 .customers__list {
 	display: flex;
-
+	flex-wrap: wrap;
 	gap: 30px;
 	padding: 0;
 }

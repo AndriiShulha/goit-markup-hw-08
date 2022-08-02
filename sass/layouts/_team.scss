@@ -4,6 +4,7 @@
 
 	&__set-foto {
 		display: flex;
+		flex-wrap: wrap;
 		--items: 4;
 		margin-bottom: -30px;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -18,7 +19,7 @@
 	// font-weight: 700;
 	// font-size: 36px;
 	// line-height: 1.17;
-	// text-align: center;
+	text-align: center;
 	// letter-spacing: 0.03em;
 
 	// color: var(--main-color-btn);
