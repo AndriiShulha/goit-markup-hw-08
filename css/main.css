@@ -86,7 +86,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0 auto;
   cursor: pointer;
   border: none;
 }
@@ -103,6 +102,7 @@ button {
 }
 
 .hero-btn {
+  margin: 0 auto;
   padding: 10px 30px;
   font-family: inherit;
   font-weight: 700;
@@ -452,15 +452,32 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+}
+@media screen and (min-width: 320px), (max-width: 767px) {
+  .subscribe__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mail {
@@ -528,7 +545,6 @@ section {
 }
 
 .subscribe-btn {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,6 +579,23 @@ section {
   letter-spacing: 0.06em;
   margin-right: 10px;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .backdrop {
@@ -1429,7 +1462,6 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   --items: 4;
-  margin-bottom: -30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__set-foto {
@@ -1438,7 +1470,12 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__set-foto {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1558,6 +1595,12 @@ section {
       flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .customers__item {
