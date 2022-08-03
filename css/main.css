@@ -449,9 +449,6 @@ section {
 }
 
 .subscribe__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -481,9 +478,10 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -585,7 +583,7 @@ section {
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-btn {
     margin-top: 20px;
   }
@@ -1501,7 +1499,6 @@ section {
 }
 
 .team__item {
-  width: 270px;
   background: #ffffff;
   margin-right: -15px;
   margin: 15px;
@@ -1526,8 +1523,6 @@ section {
 
 .team__set-item {
   display: block;
-  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
   max-width: 100%;
   height: auto;
   border-radius: 4px;
@@ -1603,11 +1598,11 @@ section {
   }
 }
 
-.customers__item {
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (max-width: 767px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+  }
 }
 @media screen and (min-width: 768px) {
   .customers__item {
@@ -1637,7 +1632,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  width: 170px;
+  width: 100%;
   outline: none;
   -webkit-transition: border var(--anim-slow);
   transition: border var(--anim-slow);
