@@ -42,7 +42,7 @@
 
 .portfolio__card-set {
 	display: block;
-	flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+	// flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
 	max-width: 100%;
 	height: auto;
 	border-radius: 4px;
