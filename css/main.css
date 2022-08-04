@@ -1045,27 +1045,23 @@ section {
 }
 
 .header-contact {
-  display: none;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
   color: var(--card-text);
+  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .header-contact {
+    display: none;
     margin-top: 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .header-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1084,27 +1080,13 @@ section {
 }
 
 .header-contact__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.header-contact__item:not(:last-child) {
-  margin-right: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .header-contact__item:hover, .header-contact__item:focus {
   color: var(--accent-txt-color);
   cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .header-contact__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .header-contact__item:not(:last-child) {
@@ -1114,8 +1096,8 @@ section {
 }
 
 .header-contact__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
